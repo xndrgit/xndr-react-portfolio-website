@@ -6,16 +6,27 @@ import React, {Suspense} from "react";
 import CanvasLoader from '../Loader';
 
 const Computers = () => {
-    const computer = useGLTF('./desktop_pc/scene.gltf')
+    const computer = useGLTF('./desktop_pc/scene.gltf');
 
     return (
         <mesh>
-            {/* eslint-disable-next-line react/no-unknown-property */}
-            <hemisphereLight intensity={0.15} groundColor='black'/>
-            {/* eslint-disable-next-line react/no-unknown-property */}
+            {/* Hemisphere Light */}
+            <hemisphereLight intensity={0.15} groundColor="black"/>
+
+            {/* Point Light */}
             <pointLight intensity={1}/>
-            {/* eslint-disable-next-line react/no-unknown-property */}
-            <primitive object={computer.scene}/>
+
+            {/* Spot Light with correct properties */}
+            <spotLight
+                position={[-20, 50, 10]}
+                angle={Math.PI / 6} // Converted from 0.12 (assumed degrees) to radians
+                penumbra={1}
+                intensity={1}
+                castShadow={true}
+                shadowMapSize={1024}
+            />
+
+            <primitive object={computer.scene} scale={0.75} position={[0, -3.25, -1.5]} rotation={[-0.01, -0.2, -0.1]}/>
         </mesh>
     );
 };
