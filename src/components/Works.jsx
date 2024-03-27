@@ -4,7 +4,6 @@ import {motion} from "framer-motion";
 import {fadeIn, textVariant} from "../utils/motion.js";
 import {styles} from "../style.js";
 import {projects} from "../constants/index.js";
-import * as PropTypes from "prop-types";
 import {Tilt} from "react-tilt";
 import {github} from "../assets/index.js";
 
@@ -37,20 +36,21 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
                     <p className="mt-2 text-secondary text-[14px]">{description}</p>
                 </div>
 
+                <div className="mt-4 flex flex-wrap gap-2">
+                    {tags.map((tag) => (
+                        <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+                            #{tag.name}
+                        </p>
+                    ))}
+                </div>
+
             </Tilt>
 
         </motion.div>
     )
 }
 
-ProjectCard.propTypes = {
-    image: PropTypes.any,
-    source_code_link: PropTypes.string,
-    name: PropTypes.any,
-    index: PropTypes.number,
-    description: PropTypes.any,
-    tags: PropTypes.any
-};
+
 const Works = () => {
     return (
 
