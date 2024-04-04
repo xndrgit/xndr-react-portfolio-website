@@ -23,14 +23,14 @@ const Hero = () => {
             </div>
             <ComputersCanvas/>
 
-            <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+            <div
+                className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center  transition-transform hover:scale-105">
                 <a href="#about">
                     <div
                         className="w-[200px] h-[64px] rounded-3xl border-2 border-secondary flex justify-center items-center p-2">
                         <p>
                             Scopri di più
                         </p>
-                        {/* eslint-disable-next-line react/jsx-no-undef */}
                         {/*<motion.dev*/}
                         {/*    animate={{*/}
                         {/*        y:[0, 24, 0]*/}

@@ -8,6 +8,7 @@ import {EarthCanvas} from "./canvas/index.js";
 
 import emailjs from '@emailjs/browser';
 
+
 const Contact = () => {
 
     const formRef = useRef();
@@ -58,6 +59,7 @@ const Contact = () => {
 
             })
     }
+
 
     return (
         <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
