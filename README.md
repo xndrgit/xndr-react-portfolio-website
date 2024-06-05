@@ -7,7 +7,9 @@ It's my hope that by sharing this project it can brings value to people as a por
 ![image](https://github.com/xndrgit/xndr-react-portfolio-website/assets/115892862/c8a80d58-bcda-4ad1-b0d6-cd99d62029bf)
 ![image](https://github.com/xndrgit/xndr-react-portfolio-website/assets/115892862/6f8780c9-b00c-427e-adb3-e0c747f20f6d)
 
-
-
 ## How to use this?🛠
 contact me via <a href="https://www.instagram.com/xndr.ig/"> instagram </a>
+
+## Security Vulnerabilities & Collab 💌
+If you discover a security vulnerability or you wanna collab, please send an e-mail to xndr via [mymails.xander@gmail.com](mailto:mymails.xander@gmail.com).
+
